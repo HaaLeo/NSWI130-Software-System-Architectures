@@ -18,23 +18,40 @@
     <element xsi:type="archimate:ArchimateDiagramModel" name="Decomposition View" id="eae93f81-b330-491a-85c5-446e66c014b5"/>
     <element xsi:type="archimate:SketchModel" name="Decomposition View" id="306905c0-8e29-409b-a2d5-201a0e2408e4" background="0">
       <child xsi:type="archimate:Group" id="bb4e2f2f-154d-4c3a-be24-cab462368c1c" name="Light Regulation">
-        <bounds x="72" y="72" width="685" height="193"/>
+        <bounds x="72" y="72" width="505" height="277"/>
         <child xsi:type="archimate:SketchModelSticky" id="63b9b3e7-26e4-42f2-9c35-4d1b27417479" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
-          <bounds x="372" y="36" width="277" height="49"/>
-          <content>Identity Management System Client</content>
+          <bounds x="348" y="36" width="133" height="49"/>
+          <content>Identity Management Client</content>
         </child>
         <child xsi:type="archimate:SketchModelSticky" id="cccc95d0-34da-4e23-9e91-6bee909c697f" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
-          <bounds x="372" y="108" width="277" height="49"/>
+          <bounds x="348" y="108" width="133" height="49"/>
           <content>Message Client</content>
         </child>
         <child xsi:type="archimate:SketchModelSticky" id="6f6a0671-1dda-49e5-8ab5-15776de5b348" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
-          <bounds x="24" y="36" width="301" height="121"/>
-          <child xsi:type="archimate:SketchModelSticky" id="17712cf6-04e0-4ef2-b24f-496bcc7e7018" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
-            <bounds x="48" y="144" width="97" height="73"/>
-          </child>
+          <bounds x="24" y="36" width="301" height="217"/>
           <child xsi:type="archimate:SketchModelSticky" id="a3b23561-58c9-4df3-954f-77e7aea3aadd" name="Sticky" lineColor="#5c5c5c" fillColor="#ffc400">
-            <bounds x="30" y="36" width="247" height="61"/>
+            <bounds x="156" y="36" width="127" height="169"/>
             <content>Bulb Adapter</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="32c6c919-2dfd-49b5-b5b6-521414f8f75a" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
+            <bounds x="12" y="36" width="127" height="25"/>
+            <content>Increase Brightness</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="2f1613a6-01c4-49f4-a3a7-d54d2c221c66" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
+            <bounds x="12" y="72" width="127" height="25"/>
+            <content>Reduce Brightness</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="b0967c9c-7b21-4b3d-b10b-a6a64b8ab68c" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
+            <bounds x="12" y="108" width="127" height="25"/>
+            <content>Get Bulb Status</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="754f87e1-060a-48af-86b3-e46cb523f011" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
+            <bounds x="12" y="180" width="127" height="25"/>
+            <content>Publish Bulb Status</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="31033aca-0063-4645-8ee4-f67015fe23b1" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
+            <bounds x="12" y="144" width="127" height="25"/>
+            <content>Publish Brightness</content>
           </child>
           <content>Core Application</content>
         </child>

@@ -1,0 +1,16 @@
+To collect consumption data, all outlets must be of a specific type or be equipped with a device that allows energy flow measurement.
+This device/outlet type will send data in such a form that it can be stored in our data collection storage easily.
+Using either manual or an automated instruction the outlet/device can be turned off.
+For the UI: the app user must be identified and his permissions verified before continuing. He will be verified using the external user authentication service.
+Then, by using defined selectors, one user can choose from our app some parameters expressing the interval of time, and the location/specific outlet they want the consumption data for.
+All outlets will either have a name or ID (or both) to be human readable.
+Data displayed will be structured in an Average for the time specified, then an average per day( if interval is longer than 48 hours) and an average per hour (if interval is longer than 2 hours).
+The Decomposition View for data consumption:
+	The primary module will contain the core application, the external identity management system client, and the message client.
+	The core application will contain the data collection adaptor module and the status monitoring module.
+	The Data Collection Adaptor will also contain the module Data Storage Adaptor.
+	The Data Storage Adaptor will store data in the formats specified for the type of storage required.
+	The Data Collection Adaptor will feature ways to collect data from any of the devices used to measure data (specific types of outlets or add-on devices).
+	The Status Monitoring module contains the Status Toggling module.
+	The Status Toggling module will toggle between the on or off statuses of the outlets if the outlet or add-on allows it.
+	The Status Monitoring module will verify the status of the outlet (on/off, in-use/not-in-use).

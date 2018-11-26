@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Building Maintenance" id="558750e8-9c64-4bfd-bcc6-e991eeecf02a" version="4.0.1">
+  <folder name="Strategy" id="cdac86fc-65c0-4995-a9c9-d78a9c14b35b" type="strategy"/>
+  <folder name="Business" id="8b37cf3f-062c-4fc0-803b-e026dcc603c7" type="business">
+    <element xsi:type="archimate:BusinessObject" name="sd" id="30f1267a-816d-4ca6-a563-faa0148d0dae"/>
+  </folder>
+  <folder name="Application" id="a87966ca-0391-4244-9619-7b63f6a65d9d" type="application"/>
+  <folder name="Technology &amp; Physical" id="abab5f8b-b3f9-4a24-99d3-21695ddf7e81" type="technology">
+    <element xsi:type="archimate:Node" name="Node" id="c8fe5cac-ca10-4680-b2a7-de8432590738"/>
+  </folder>
+  <folder name="Motivation" id="58c660fe-9668-4c4b-a964-9b56812d8267" type="motivation">
+    <element xsi:type="archimate:Requirement" name="Requirement" id="78f4ce8f-a649-4adc-b957-95263f492bdc"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="bbbc1e99-fcb0-4f10-87c6-e4ce136fd281" type="implementation_migration"/>
+  <folder name="Other" id="a98195b1-e252-4169-8cf0-d5fc3308c0fc" type="other"/>
+  <folder name="Relations" id="c9586dbf-4738-4dc1-a0ba-ea97c6b07de3" type="relations"/>
+  <folder name="Views" id="938a5ec1-7ce9-452c-8491-b50ed7652581" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Decomposition View" id="eae93f81-b330-491a-85c5-446e66c014b5"/>
+    <element xsi:type="archimate:SketchModel" name="Decomposition View" id="306905c0-8e29-409b-a2d5-201a0e2408e4" background="0">
+      <child xsi:type="archimate:Group" id="bb4e2f2f-154d-4c3a-be24-cab462368c1c" name="Power Consumption" fontColor="#ffffff" fillColor="#808080">
+        <bounds x="72" y="72" width="685" height="205"/>
+        <child xsi:type="archimate:SketchModelSticky" id="63b9b3e7-26e4-42f2-9c35-4d1b27417479" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
+          <bounds x="372" y="36" width="277" height="73"/>
+          <content>Identity Management System Client</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="cccc95d0-34da-4e23-9e91-6bee909c697f" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
+          <bounds x="372" y="120" width="277" height="73"/>
+          <content>Message Client</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="6f6a0671-1dda-49e5-8ab5-15776de5b348" name="Sticky" lineColor="#5c5c5c" fillColor="#c9e7b7">
+          <bounds x="24" y="36" width="301" height="157"/>
+          <child xsi:type="archimate:SketchModelSticky" id="a3b23561-58c9-4df3-954f-77e7aea3aadd" name="DCA" lineColor="#5c5c5c" fillColor="#ffc400">
+            <bounds x="12" y="36" width="109" height="109"/>
+            <child xsi:type="archimate:SketchModelSticky" id="9bfb0519-8ef9-4b22-baac-88b21d891262" name="DSA" fontColor="#ffffff" lineColor="#5c5c5c" textAlignment="1" fillColor="#004040">
+              <bounds x="12" y="36" width="85" height="61"/>
+              <content>Data Storage Adaptor</content>
+            </child>
+            <content>Data Collection Adaptor</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="94fde669-5441-473f-b8ed-5c33cee42769" name="SM" lineColor="#5c5c5c" fillColor="#008000">
+            <bounds x="132" y="36" width="157" height="109"/>
+            <child xsi:type="archimate:SketchModelSticky" id="1f9f8bca-cc5a-4a55-b0ae-47f9f9c122c7" name="ST" fontColor="#ffffff" lineColor="#5c5c5c" textAlignment="1" fillColor="#004040">
+              <bounds x="12" y="36" width="135" height="25"/>
+              <content>Status Toggling</content>
+            </child>
+            <content>Status Monitoring</content>
+          </child>
+          <content>Core Application</content>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

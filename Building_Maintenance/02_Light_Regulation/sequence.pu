@@ -1,13 +1,8 @@
 @startuml sequence
 title Light Regulation: User sets Brightness
-participant ims as "Identity Management Server"
 participant ca as "Core Application" <<Service>>
 participant ba as "Bulb Adapter" <<Gateway Adapter>>
 participant b as "Bulb" <<Device>>
-
-ims->ca: increase brightness\n<<authorized request>>
-activate ca
-
 
 ca -> ba: increase brightness
 activate ba
@@ -23,6 +18,4 @@ deactivate b
 deactivate b
 ba --> ca: brightness increased
 deactivate ba
-ca --> ims: brightness increased
-deactivate ca
 @enduml

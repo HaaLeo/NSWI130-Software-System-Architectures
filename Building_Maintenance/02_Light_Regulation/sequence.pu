@@ -1,8 +1,8 @@
 @startuml sequence
 title Light Regulation: User sets Brightness
 participant ca as "Core Application" <<Service>>
-participant ba as "Bulb Adapter" <<Gateway Adapter>>
-participant b as "Bulb" <<Device>>
+participant ba as "Brightness Service Adapter" <<Gateway Adapter>>
+participant b as "Brightness Service" <<Device>>
 
 ca -> ba: increase brightness
 activate ba

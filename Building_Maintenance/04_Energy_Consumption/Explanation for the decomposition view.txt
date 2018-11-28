@@ -5,12 +5,22 @@ For the UI: the app user must be identified and his permissions verified before 
 Then, by using defined selectors, one user can choose from our app some parameters expressing the interval of time, and the location/specific outlet they want the consumption data for.
 All outlets will either have a name or ID (or both) to be human readable.
 Data displayed will be structured in an Average for the time specified, then an average per day( if interval is longer than 48 hours) and an average per hour (if interval is longer than 2 hours).
+
 The Decomposition View for data consumption:
-	The primary module will contain the core application, the external identity management system client, and the message client.
-	The core application will contain the data collection adaptor module and the status monitoring module.
-	The Data Collection Adaptor will also contain the module Data Storage Adaptor.
-	The Data Storage Adaptor will store data in the formats specified for the type of storage required.
-	The Data Collection Adaptor will feature ways to collect data from any of the devices used to measure data (specific types of outlets or add-on devices).
-	The Status Monitoring module contains the Status Toggling module.
-	The Status Toggling module will toggle between the on or off statuses of the outlets if the outlet or add-on allows it.
-	The Status Monitoring module will verify the status of the outlet (on/off, in-use/not-in-use).
+	The primary module will contain the core services.
+	The core services are only consumption related.
+	The services are getting and sending overall consumption and specific consumption.
+	The specific consumption means that we are only verifying consumption data from a specific section/room/outlet of the building.
+	The overall consumption means that we want the consumption data from all outlets in our system.
+
+Flow of a "Get overall consumption" request: 
+	The client application verifies the authenticated status of the user. 
+	In a positive status case, a request is made with the option to get overall consumption.
+	The request goes to Communication Client.
+	From the client, it is then handled by the Communication Server.
+	The database is queried for the needed information, and the response is sent back to the client application.
+	
+Flow of normal data gathering:
+	The devices (special outlets/addons for outlets) will send data of power consumption in a unit of time (minutes/etc) to a gateway.
+	The gateway will then verify and parse this data and will send it to to be stored in a database.
+	
